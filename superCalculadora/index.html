@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="Style/stylesheet.css"> </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header> 
+        <h1>Super Calculadora</h1>
+        <!-- aqui é os botão ali de cima, dentro de uma div na qual "facilita"
+        a personalização de todos ao mesmo tempo, sendo que o botão tem uma tag diferente-->
+        <div class="flex inputsCnt">
+            <label for="primeiroNumero"> Primeiro número (A)</label>
+            <input type="number" name="primeiroNumero" id="primeiroNumero">
+            <label for="segundoNumero"> Segundo número (B)</label>
+            <input type="number" name="segundoNumero" id="segundoNumero">
+            <input type="button" value="calcular" onclick="calcular()" id="botaoCalcular">
+            
+        </div>
+    </header>
+    <main>
+        <!-- aqui tá todas as tags de onde cada calculo tem que aparecer e a ordem,
+        sendo que todas estão dentro de uma div chamada flex, na qual personaliza 
+        todo o processo em uma única classe só-->
+        <div class="flex">
+
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Soma</p>
+            <p class="resultadoCalculo" id="soma"></p>
+        </section>
+        
+        <section class="calculoCnt">
+        <p class="nomeCalculo">Subtracao A - B</p>
+        <p class="resultadoCalculo" id="subtracaoAB"></p>
+        </section>
+        
+        <section class="calculoCnt">
+        <p class="nomeCalculo">Subtracao B - A</p>
+        <p class="resultadoCalculo" id="subtracaoBA"></p>
+        </section>
+        </div>
+        
+        <div class="flex">
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Multiplicacao</p>
+            <p class="resultadoCalculo" id="multiplicacao"></p>
+        </section>
+        
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Divisão A/B</p>
+            <p class="resultadoCalculo" id="divisaoAB"></p>
+        </section>
+        
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Divisão B/A</p>
+            <p class="resultadoCalculo" id="divisaoBA"></p>
+        </section>
+        </div>
+
+        <div class="flex">
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Potência de A na base de B</p>
+            <p class="resultadoCalculo" id="potenciaAB"></p>
+        </section>
+        
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Potência de B na base de A</p>
+            <p class="resultadoCalculo" id="potenciaBA"></p>
+        </section>
+        
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Raiz Quadrada de A</p>
+            <p class="resultadoCalculo" id="raizQuadradaA"></p>
+        </section>
+        </div>
+
+        <div class="flex">
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Raiz Quadrada de B</p>
+            <p class="resultadoCalculo" id="raizQuadradaB"></p>
+        </section>
+        
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Fatorial de A</p>
+            <p class="resultadoCalculo" id="fatorialA"></p>
+        </section>
+    
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Fatorial de B</p>
+            <p class="resultadoCalculo" id="fatorialB"></p>
+        </section>
+        </div>
+
+        <div class="flex">
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Porcentagem de A em relação a B</p>
+            <p class="resultadoCalculo" id="porcentagemA"></p>
+        </section>
+    
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Porcentagem de B em relação a A</p>
+            <p class="resultadoCalculo" id="porcentagemB"></p>
+        </section>
+    
+        <section class="calculoCnt">
+            <p class="nomeCalculo">Média</p>
+            <p class="resultadoCalculo" id="media"></p>
+        </section>
+    
+    </div>
+    </main>
+
+
+</body>
+
+
+<script defer src="./script/script.js"></script>
+</html>
